@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class ="container">
+	
+ <%= render :partial => "layouts/header" %>
+
+<setion class ="round">
+<%= yield %>
+</section>
+ <%= render :partial => "layouts/footer" %>
+</div>
+
+</body>
+</html>
